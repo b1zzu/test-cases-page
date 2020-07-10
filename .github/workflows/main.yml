@@ -1,0 +1,23 @@
+name: Test Cases
+
+on:
+  push:
+
+jobs:
+  deploy:
+    name: Deploy GitHub Page
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Get dependencies
+        run: npm install
+
+      - name: Deploy GitHub Page
+        run: npm run deploy
