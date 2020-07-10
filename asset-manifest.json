@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/test-cases-page/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/test-cases-page/static/js/main.63179b61.chunk.js",
+    "main.js.map": "/test-cases-page/static/js/main.63179b61.chunk.js.map",
+    "runtime-main.js": "/test-cases-page/static/js/runtime-main.07d2ef69.js",
+    "runtime-main.js.map": "/test-cases-page/static/js/runtime-main.07d2ef69.js.map",
+    "static/css/2.582307de.chunk.css": "/test-cases-page/static/css/2.582307de.chunk.css",
+    "static/js/2.9a8e8253.chunk.js": "/test-cases-page/static/js/2.9a8e8253.chunk.js",
+    "static/js/2.9a8e8253.chunk.js.map": "/test-cases-page/static/js/2.9a8e8253.chunk.js.map",
+    "index.html": "/test-cases-page/index.html",
+    "precache-manifest.fb9f23493384a57d2cef711f4ee8f77a.js": "/test-cases-page/precache-manifest.fb9f23493384a57d2cef711f4ee8f77a.js",
+    "service-worker.js": "/test-cases-page/service-worker.js",
+    "static/css/2.582307de.chunk.css.map": "/test-cases-page/static/css/2.582307de.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/test-cases-page/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.9a8e8253.chunk.js.LICENSE.txt": "/test-cases-page/static/js/2.9a8e8253.chunk.js.LICENSE.txt",
+    "static/media/base.css": "/test-cases-page/static/media/pficon.f907e666.ttf",
+    "static/media/background-image.css": "/test-cases-page/static/media/pfbg_768@2x.0099dea3.jpg",
+    "static/media/about-modal-box.css": "/test-cases-page/static/media/pfbg_992@2x.1423e11e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07d2ef69.js",
+    "static/css/2.582307de.chunk.css",
+    "static/js/2.9a8e8253.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.63179b61.chunk.js"
+  ]
+}
