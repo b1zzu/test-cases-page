@@ -16,14 +16,15 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
+      - name: Get dependencies
+        run: npm install
+
       - name: Set GitHub credentials
         run: |
           git config user.email "auutotron@example.com"
           git config user.name "Auto Tron"
-      
-
-      - name: Get dependencies
-        run: npm install
 
       - name: Deploy GitHub Page
         run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
