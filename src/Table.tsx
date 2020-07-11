@@ -143,6 +143,7 @@ class FilterTableDemo extends React.Component<any, any> {
         return {
           filters: {
             ...prevState.filters,
+            // eslint-disable-next-line
             ["name"]: prevFilters.includes(inputValue)
               ? prevFilters
               : [...prevFilters, inputValue],
@@ -157,6 +158,7 @@ class FilterTableDemo extends React.Component<any, any> {
         return {
           filters: {
             ...prevState.filters,
+            // eslint-disable-next-line
             ["location"]: [selection],
           },
         };
@@ -304,6 +306,7 @@ class FilterTableDemo extends React.Component<any, any> {
   }
 
   renderToolbar() {
+    // eslint-disable-next-line
     const { filters } = this.state;
     return (
       <Toolbar
