@@ -16,6 +16,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
+      - name: Set GitHub credentials
+        run: |
+          git config user.email "auutotron@example.com"
+          git config user.name "Auto Tron"
+      
+
       - name: Get dependencies
         run: npm install
 
