@@ -33,6 +33,9 @@ jobs:
         run: |
           git config user.email "autotron@example.com"
           git config user.name "Autotron"
+          git status
+          pwd
+          ls -al .git
           git commit -a -m "deploy test-cases-page"
           git push
         working-directory: build/
