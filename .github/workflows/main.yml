@@ -18,14 +18,14 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: Get dependencies
-        run: npm install
-
       - name: Set GitHub credentials
         run: |
           git config user.email "autotron@example.com"
           git config user.name "Autotron"
           git config credential.https://github.com.username autotron
+
+      - name: Get dependencies
+        run: npm install
 
       - name: Deploy GitHub Page
         run: npm run deploy
