@@ -22,25 +22,22 @@ jobs:
       - name: Build the webapp
         run: npm run build
 
-      - name: Check out the www branch
+      - name: Check out the gh-pages branch
         uses: actions/checkout@v2
         with:
-          ref: www
+          ref: gh-pages
           token: ${{ secrets.GH_TOKEN }}
-          path: www/
+          path: pages/
 
-      - name: Deploy to www
+      - name: Copy to gh-pages
         run: |
-          rm -rf www/*
-          cp -r build/* www/
+          rm -rf pages/*
+          cp -r build/* pages/
 
-      - name: Deploy www
+      - name: Deploy gh-pages
         run: |
           git config user.email "autotron@example.com"
           git config user.name "Autotron"
-          git status
-          pwd
-          ls -al .git
           git commit -a -m "deploy test-cases-page"
           git push
-        working-directory: www/
+        working-directory: pages/
