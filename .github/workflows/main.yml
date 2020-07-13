@@ -16,13 +16,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Check out the www branch
-        uses: actions/checkout@v2
-        with:
-          ref: www
-          token: ${{ secrets.GH_TOKEN }}
-          path: build/
-
       - name: Get dependencies
         run: npm install
 
@@ -36,6 +29,18 @@ jobs:
       - name: Build the webapp
         run: npm run build
 
+      - name: Check out the www branch
+        uses: actions/checkout@v2
+        with:
+          ref: www
+          token: ${{ secrets.GH_TOKEN }}
+          path: www/
+
+      - name: Deploy to www
+        run: |
+          rm -rf www/*
+          cp -r build/* www/
+
       - name: Deploy www
         run: |
           git config user.email "autotron@example.com"
@@ -45,4 +50,4 @@ jobs:
           ls -al .git
           git commit -a -m "deploy test-cases-page"
           git push
-        working-directory: build/
+        working-directory: www/
