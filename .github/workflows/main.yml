@@ -15,8 +15,8 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_TOKEN }}
+        # with:
+        #   token: ${{ secrets.GH_TOKEN }}
 
       - name: Set GitHub credentials
         run: |
