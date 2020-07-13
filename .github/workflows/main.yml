@@ -23,7 +23,7 @@ jobs:
           git config user.email "autotron@example.com"
           git config user.name "Autotron"
           git config credential.https://github.com.username autotron
-          git config --unset http.https://github.com/".extraheader
+          git config --unset http.https://github.com/.extraheader
 
       - name: Echo stuff
         run: |
