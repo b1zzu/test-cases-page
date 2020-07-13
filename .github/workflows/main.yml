@@ -24,7 +24,9 @@ jobs:
         run: npm install
 
       - name: Build the webapp
-        run: npm run build
+        run: |
+          npm run tests
+          npm run build
 
       - name: Check out the gh-pages branch
         uses: actions/checkout@v2

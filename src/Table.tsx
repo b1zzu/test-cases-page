@@ -1,4 +1,5 @@
 import "@patternfly/react-core/dist/styles/base.css";
+import tests from "./tests.json";
 
 import * as React from "react";
 import {
@@ -43,6 +44,19 @@ class FilterTableDemo extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
 
+    const rows = tests.map((t) => ({
+      cells: [
+        t.ID,
+        t.Category,
+        t.Title,
+        t.Tags.join(" "),
+        t.Estimate,
+        t.Require.join(" "),
+        t.Link,
+        t.Runs,
+      ],
+    }));
+
     this.state = {
       filters: {
         location: [],
@@ -63,7 +77,7 @@ class FilterTableDemo extends React.Component<any, any> {
         { title: "Link" },
         { title: "Runs" },
       ],
-      rows: [],
+      rows: rows,
       inputValue: "",
     };
 
@@ -165,25 +179,6 @@ class FilterTableDemo extends React.Component<any, any> {
       });
       this.onFilterSelect();
     };
-  }
-
-  async loadTests() {
-    const tests: any[] = [];
-
-    const data = tests.map((t) => ({
-      cells: [
-        t.ID,
-        t.Category,
-        t.Title,
-        t.Tags.join(" "),
-        t.Estimate,
-        t.Require.join(" "),
-        t.Link,
-        t.Runs,
-      ],
-    }));
-
-    this.setState({ rows: data });
   }
 
   buildCategoryDropdown() {
