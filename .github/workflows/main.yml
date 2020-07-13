@@ -23,8 +23,9 @@ jobs:
 
       - name: Set GitHub credentials
         run: |
-          git config user.email "auutotron@example.com"
-          git config user.name "Auto Tron"
+          git config user.email "autotron@example.com"
+          git config user.name "Autotron"
+          git config credential.https://github.com.username autotron
 
       - name: Deploy GitHub Page
         run: npm run deploy
