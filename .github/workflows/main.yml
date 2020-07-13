@@ -1,7 +1,11 @@
 name: Test Cases
 
 on:
+  schedule:
+    - cron: 0 0 * * MON-SAT
   push:
+    branch:
+      - master
 
 jobs:
   deploy:
