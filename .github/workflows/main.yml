@@ -15,24 +15,24 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v2
-        # with:
-        #   token: ${{ secrets.GH_TOKEN }}
 
-      - name: Set GitHub credentials
-        run: |
-          git config user.email "autotron@example.com"
-          git config user.name "Autotron"
-          git config credential.https://github.com.username autotron
-          git config --unset http.https://github.com/.extraheader
-
-      - name: Echo stuff
-        run: |
-          env
-          echo "--------"
-          cat .git/config
+      - name: Check out the www branch
+        uses: actions/checkout@v2
+        with:
+          ref: www
+          token: ${{ secrets.GH_TOKEN }}
+          path: build/
 
       - name: Get dependencies
         run: npm install
 
-      - name: Deploy GitHub Page
-        run: npm run deploy
+      - name: Build the webapp
+        run: npm run build
+
+      - name: Deploy www
+        run: |
+          git config user.email "autotron@example.com"
+          git config user.name "Autotron"
+          git add -a -m "deploy test-cases-page"
+          git push
+        working-directory: build/
