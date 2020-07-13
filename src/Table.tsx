@@ -384,7 +384,7 @@ class FilterTableDemo extends React.Component<any, any> {
                 </EmptyStateBody>
                 <EmptyStateSecondaryActions>
                   <Button variant="link" onClick={() => this.onDelete(null)}>
-                    Clear all filters
+                    Clear all filters // and do stuff
                   </Button>
                 </EmptyStateSecondaryActions>
               </EmptyState>
