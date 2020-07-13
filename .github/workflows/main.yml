@@ -24,6 +24,12 @@ jobs:
           git config user.name "Autotron"
           git config credential.https://github.com.username autotron
 
+      - name: Echo stuff
+        run: |
+          env
+          echo "--------"
+          cat .git/config
+
       - name: Get dependencies
         run: npm install
 
