@@ -19,13 +19,6 @@ jobs:
       - name: Get dependencies
         run: npm install
 
-      - name: Verify stuff
-        run: |
-          git status
-          pwd
-          ls -al .git
-        working-directory: build/
-
       - name: Build the webapp
         run: npm run build
 
