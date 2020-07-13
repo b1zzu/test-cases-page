@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/test-cases-page/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/test-cases-page/static/js/main.6bd3a2ab.chunk.js",
-    "main.js.map": "/test-cases-page/static/js/main.6bd3a2ab.chunk.js.map",
+    "main.js": "/test-cases-page/static/js/main.cc304ee0.chunk.js",
+    "main.js.map": "/test-cases-page/static/js/main.cc304ee0.chunk.js.map",
     "runtime-main.js": "/test-cases-page/static/js/runtime-main.07d2ef69.js",
     "runtime-main.js.map": "/test-cases-page/static/js/runtime-main.07d2ef69.js.map",
     "static/css/2.582307de.chunk.css": "/test-cases-page/static/css/2.582307de.chunk.css",
-    "static/js/2.6edac7d6.chunk.js": "/test-cases-page/static/js/2.6edac7d6.chunk.js",
-    "static/js/2.6edac7d6.chunk.js.map": "/test-cases-page/static/js/2.6edac7d6.chunk.js.map",
+    "static/js/2.d0b0323f.chunk.js": "/test-cases-page/static/js/2.d0b0323f.chunk.js",
+    "static/js/2.d0b0323f.chunk.js.map": "/test-cases-page/static/js/2.d0b0323f.chunk.js.map",
     "index.html": "/test-cases-page/index.html",
-    "precache-manifest.d20ac9286170eb6bf5cf3e11af8f8d93.js": "/test-cases-page/precache-manifest.d20ac9286170eb6bf5cf3e11af8f8d93.js",
+    "precache-manifest.1fdc7985321956953c304f607be9492b.js": "/test-cases-page/precache-manifest.1fdc7985321956953c304f607be9492b.js",
     "service-worker.js": "/test-cases-page/service-worker.js",
     "static/css/2.582307de.chunk.css.map": "/test-cases-page/static/css/2.582307de.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/test-cases-page/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.6edac7d6.chunk.js.LICENSE.txt": "/test-cases-page/static/js/2.6edac7d6.chunk.js.LICENSE.txt",
+    "static/js/2.d0b0323f.chunk.js.LICENSE.txt": "/test-cases-page/static/js/2.d0b0323f.chunk.js.LICENSE.txt",
     "static/media/base.css": "/test-cases-page/static/media/pficon.f907e666.ttf",
     "static/media/background-image.css": "/test-cases-page/static/media/pfbg_768@2x.0099dea3.jpg",
     "static/media/about-modal-box.css": "/test-cases-page/static/media/pfbg_992@2x.1423e11e.jpg"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.07d2ef69.js",
     "static/css/2.582307de.chunk.css",
-    "static/js/2.6edac7d6.chunk.js",
+    "static/js/2.d0b0323f.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6bd3a2ab.chunk.js"
+    "static/js/main.cc304ee0.chunk.js"
   ]
 }
